@@ -1,9 +1,9 @@
 # Equipment Failure Prediction - TAMU Datathon 2023 (2nd Place Solution)
 
 ## Competition Overview
-[NASA Turbofan Engine Failure Prediction](https://www.kaggle.com/competitions/equipfails/overview)  
-**Task:** Predict failure of turbofan engines using sensor data  
-**Challenge:** Highly imbalanced dataset (1.67% failure rate)  
+[NASA Turbofan Engine Failure Prediction](https://www.kaggle.com/competitions/equipfails/overview)
+**Task:** Predict failure of turbofan engines using sensor data
+**Challenge:** Highly imbalanced dataset (1.67% failure rate)
 **Result:** 2nd Place on Private Leaderboard (F1-score: 0.8044)
 
 ## Solution Approach
@@ -21,19 +21,20 @@
   - Number of leaves: 200
   - Training iterations: 100
 
-## Repository Structure 
-├── train.py # Training script
-├── predict.py # Inference script
-├── requirements.txt # Dependency list
-├── data/ # Input data directory
-│ ├── train.csv # Training data
-│ └── test.csv # Test data
-└── outputs/ # Prediction outputs
+## Repository Structure
+```
+train.py # Training script
+predict.py # Inference script
+requirements.txt # Dependency list
+data/ # Input data directory
+train.csv # Training data
+test.csv # Test data
+outputs/ # Prediction outputs
+```
 
 ## Usage
 
 1. Install dependencies:
-
 ```bash
 pip install -r requirements.txt
 ```
@@ -50,5 +51,3 @@ python predict.py \
   --test_data data/equip_failures_test_set.csv \
   --output outputs/predictions.csv
 ```
-
-
